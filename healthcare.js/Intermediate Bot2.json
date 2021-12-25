@@ -1,0 +1,89 @@
+{
+    "version": 3,
+    "steps": [
+      {
+        "id": "8c94aadbd0e4-a8662d84fcff2a9e-144e",
+        "type": "statement",
+        "designer": {
+          "xLocation": 320,
+          "yLocation": 6,
+          "next": "aa3c697ed661-fca2e12affbf8c97-fba7"
+        },
+        "text": "Hey! Do you want to check your temperature?",
+        "stringId": "stringId_8d13786572d5328c"
+      },
+      {
+        "id": "aa3c697ed661-fca2e12affbf8c97-fba7",
+        "label": "Wait",
+        "type": "wait",
+        "designer": {
+          "xLocation": 327,
+          "yLocation": 60,
+          "next": "28a46eab3fc5-d3c071f07cdaa380-5790"
+        },
+        "time": "3000"
+      },
+      {
+        "id": "28a46eab3fc5-d3c071f07cdaa380-5790",
+        "type": "statement",
+        "designer": {
+          "xLocation": 320,
+          "yLocation": 112,
+          "next": "234fc18e8f10-a3005a88e5bf5fc5-9500"
+        },
+        "text": "You temperature is xyz..",
+        "stringId": "stringId_b3db0789106219f2"
+      },
+      {
+        "id": "234fc18e8f10-a3005a88e5bf5fc5-9500",
+        "type": "yesnoprompt",
+        "dataType": "boolean",
+        "designer": {
+          "xLocation": 324,
+          "yLocation": 176,
+          "next": "be4e4beea99a-68e9fc41e9b96bf4-c480"
+        },
+        "text": "Is there anything else I can help you with?",
+        "variable": "help",
+        "stringId": "stringId_6d8e800e22bb1c50",
+        "targetStepId": "4838dfcd5b4d-33b1f3780c9b79cd-6cb6"
+      },
+      {
+        "id": "be4e4beea99a-68e9fc41e9b96bf4-c480",
+        "type": "statement",
+        "designer": {
+          "xLocation": 186,
+          "yLocation": 227
+        },
+        "text": "Thank You! You can start your appointment booking process again..",
+        "stringId": "stringId_6de3fe0ccbcbd68d"
+      },
+      {
+        "id": "4838dfcd5b4d-33b1f3780c9b79cd-6cb6",
+        "type": "prompt",
+        "dataType": "[\"Height\",\"Weight\",\"Symptoms\"]",
+        "designer": {
+          "xLocation": 433,
+          "yLocation": 200,
+          "listStyle": 3,
+          "next": "07c8f60916bf-da0e59ec7e2e2463-c5e7"
+        },
+        "text": "Which vitals information do you want me to check?",
+        "variable": "vitals",
+        "submitTitle": "Submit",
+        "stringId": "stringId_50ef9021a1cf4715",
+        "choiceType": "choice"
+      },
+      {
+        "id": "07c8f60916bf-da0e59ec7e2e2463-c5e7",
+        "type": "statement",
+        "designer": {
+          "xLocation": 433,
+          "yLocation": 260,
+          "next": "234fc18e8f10-a3005a88e5bf5fc5-9500"
+        },
+        "text": "Your vitals value is xyz..",
+        "stringId": "stringId_d7b702b61a942f9b"
+      }
+    ]
+  }

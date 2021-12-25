@@ -1,0 +1,220 @@
+{
+    "version": 3,
+    "steps": [
+      {
+        "id": "776a17fde014-795a636c952c0ae7-b45b",
+        "type": "statement",
+        "designer": {
+          "xLocation": 329,
+          "yLocation": 6,
+          "next": "6421ef600b38-95effc47f26df403-883e"
+        },
+        "text": "Hello Welcome to the Genreal checkup ",
+        "stringId": "stringId_8137eb32cd3c07f8"
+      },
+      {
+        "id": "6421ef600b38-95effc47f26df403-883e",
+        "type": "prompt",
+        "dataType": "string",
+        "designer": {
+          "xLocation": 328,
+          "yLocation": 51,
+          "next": "2c06ca7d0fe0-77d4ad3519734437-ce24"
+        },
+        "text": "What is your name?",
+        "variable": "name",
+        "submitTitle": "Submit",
+        "label": "name",
+        "stringId": "stringId_f6429fe0f1a76611"
+      },
+      {
+        "id": "2c06ca7d0fe0-77d4ad3519734437-ce24",
+        "type": "prompt",
+        "dataType": "number",
+        "designer": {
+          "xLocation": 330,
+          "yLocation": 100,
+          "next": "f275cec274f1-6bba6ba06937ed10-ed03"
+        },
+        "text": "what is your age?",
+        "variable": "Age",
+        "submitTitle": "Submit",
+        "label": "Age",
+        "stringId": "stringId_84eac0ca6acc236c"
+      },
+      {
+        "id": "f275cec274f1-6bba6ba06937ed10-ed03",
+        "type": "prompt",
+        "dataType": "number",
+        "designer": {
+          "xLocation": 329,
+          "yLocation": 140,
+          "next": "6e5cd2397e7c-c2d222491ec86e79-8bd2"
+        },
+        "text": "what is your height(in cms )",
+        "variable": "Height",
+        "submitTitle": "Submit",
+        "label": "Height",
+        "stringId": "stringId_dc9034edca92e649"
+      },
+      {
+        "id": "6e5cd2397e7c-c2d222491ec86e79-8bd2",
+        "type": "prompt",
+        "dataType": "number",
+        "designer": {
+          "xLocation": 329,
+          "yLocation": 188,
+          "next": "8c62b4aa1d89-d2f0cd6df51ddb17-4776"
+        },
+        "text": "Please mention your weight (in kgs)",
+        "variable": "Weight",
+        "submitTitle": "Submit",
+        "label": "Weight",
+        "stringId": "stringId_984b24a4644c409c"
+      },
+      {
+        "id": "836ebddeb909-e8a2ea707bbebcfc-b696",
+        "type": "statement",
+        "designer": {
+          "xLocation": 649,
+          "yLocation": 180,
+          "next": "0d204f93d492-8560f7e47e73daf7-ca93"
+        },
+        "text": "Thank you! for providing details of your vitals.. You can continue with  doctor's appointment.",
+        "label": "Thank You",
+        "stringId": "stringId_fa0bc5ebf8d1d83e"
+      },
+      {
+        "id": "1277ce7512e7-d87cdbe4d0d2b219-df70",
+        "type": "yesnoprompt",
+        "dataType": "boolean",
+        "designer": {
+          "xLocation": 340,
+          "yLocation": 300,
+          "next": "e64657ac6dd6-4d069b4e4525074e-6a79"
+        },
+        "text": "Did you check your temperature  before visting the hospitals?",
+        "variable": "temperature",
+        "stringId": "stringId_74bc53cef067b745",
+        "targetStepId": "496b4448c6d8-ec3fb46b1b6be73a-3bef"
+      },
+      {
+        "id": "e64657ac6dd6-4d069b4e4525074e-6a79",
+        "type": "statement",
+        "designer": {
+          "xLocation": 227,
+          "yLocation": 340,
+          "next": "482ca3d85a5e-a75b932959f55f9f-a162"
+        },
+        "text": "Please get your temperature  checked and start your appointment procedure again..",
+        "stringId": "stringId_19597c4728b94b58"
+      },
+      {
+        "id": "482ca3d85a5e-a75b932959f55f9f-a162",
+        "type": "prompt",
+        "dataType": "string",
+        "designer": {
+          "xLocation": 240,
+          "yLocation": 400
+        },
+        "text": "Please enter \"temperature\" as your input.",
+        "variable": "check",
+        "submitTitle": "Submit",
+        "stringId": "stringId_2471eef2742a05c0"
+      },
+      {
+        "id": "496b4448c6d8-ec3fb46b1b6be73a-3bef",
+        "type": "prompt",
+        "dataType": "number",
+        "designer": {
+          "xLocation": 440,
+          "yLocation": 300,
+          "next": "fa890f7ecdee-451a80e50995f990-834c"
+        },
+        "text": "Please enter the temperature you measured( in Faranheit)",
+        "variable": "temperature",
+        "submitTitle": "Submit",
+        "stringId": "stringId_f178c3c9eca3ecc0"
+      },
+      {
+        "id": "fa890f7ecdee-451a80e50995f990-834c",
+        "type": "prompt",
+        "dataType": "[\"Cold\",\"Cough\",\"Fever\",\"Body Pains\",\"Vomitings\"]",
+        "designer": {
+          "xLocation": 440,
+          "yLocation": 380,
+          "listStyle": 3,
+          "next": "836ebddeb909-e8a2ea707bbebcfc-b696"
+        },
+        "text": "Any common symptoms?",
+        "variable": "symptoms",
+        "submitTitle": "Submit",
+        "stringId": "stringId_279e7462a6da040a",
+        "choiceType": "choice"
+      },
+      {
+        "id": "8c62b4aa1d89-d2f0cd6df51ddb17-4776",
+        "type": "datasource",
+        "designer": {
+          "xLocation": 327,
+          "yLocation": 240,
+          "next": "1277ce7512e7-d87cdbe4d0d2b219-df70",
+          "errorStepId": "8617e4cc61a4-4fa531b8f3866754-0096"
+        },
+        "dataConnection": "",
+        "urlBase": "'https://healthcareapi1.azurewebsites.net:443'",
+        "urlPath": "/api/healthcare_post/triggers/manual/invoke?api-version=2020-05-01-preview&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Src5-Ql2HhiPsiaEjW8FQ4UmZyyJ-uzx4PpGn_2GGwY",
+        "urlParams": "",
+        "contentType": "raw",
+        "method": "post",
+        "headers": "",
+        "payload": "{\r\n    \"name\":scenario.name,\r\n    \"Age\":scenario.Age,\r\n    \"Height\": scenario.Height,\r\n    \"Weight\":scenario.Weight\r\n}",
+        "opJson": true,
+        "opResolveWithFullResponse": false,
+        "response": "res",
+        "label": "POST CALL"
+      },
+      {
+        "id": "8617e4cc61a4-4fa531b8f3866754-0096",
+        "type": "statement",
+        "designer": {
+          "xLocation": 480,
+          "yLocation": 233
+        },
+        "text": "Soory!! Data wasn't Logged into the database!",
+        "label": "Log Error",
+        "stringId": "stringId_ebb39ad032303fe0"
+      },
+      {
+        "id": "0d204f93d492-8560f7e47e73daf7-ca93",
+        "type": "datasource",
+        "designer": {
+          "xLocation": 660,
+          "yLocation": 287,
+          "next": "9127ba0726c4-50084dd4583ce5d4-1c8c",
+          "errorStepId": "8617e4cc61a4-4fa531b8f3866754-0096"
+        },
+        "dataConnection": "",
+        "urlBase": "'https://healthcareapi1.azurewebsites.net:443'",
+        "urlPath": "/api/healthcare_get/triggers/manual/invoke?api-version=2020-05-01-preview&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hsMhtrk_2nZGTamPb1pCDpw-b7RVhH3cibd1s6DszzE",
+        "urlParams": "",
+        "method": "get",
+        "headers": "",
+        "opJson": true,
+        "opResolveWithFullResponse": false,
+        "label": "GET CALL",
+        "response": "res"
+      },
+      {
+        "id": "9127ba0726c4-50084dd4583ce5d4-1c8c",
+        "type": "statement",
+        "designer": {
+          "xLocation": 633,
+          "yLocation": 360
+        },
+        "text": "`Thank you ${scenario.req.ResultSets.Table1[0].name}.You have checked in at ${scenario.req.ResultSets.Table[0].ColumnDateTime} `",
+        "label": "Thank You",
+        "stringId": "stringId_5e57b55ec04d6918"
+      }
+    ]
+  }
